@@ -1,4 +1,4 @@
- var heros=["thor","antman"]
+ var heros=["thor","ironMan"]
 
 
 Array.prototype.getHero = function(){
@@ -30,7 +30,7 @@ const Teacher = {
     makeVideos: true
 }
 
-const TeachingSupport = {
+const userSupport = {
     isAvailable: false,
     __proto__:User
 }
@@ -42,9 +42,12 @@ const TSAssistant = {
                                 
 }
  // different syntax
-TeachingSupport.__proto__ = User
+ 
+ //ading user object into prototype of teachingSupport
+ userSupport.__proto__ = User
  //modern syntax
-Object.setPrototypeOf(TeachingSupport,User)
+Object.setPrototypeOf(userSupport,User)
+ //ading user object into prototype of teachingSupport
 
 
 // -----creating method "truelenght" for all strings 
